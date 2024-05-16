@@ -1,10 +1,12 @@
-import React from 'react'
+
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import './index.css'
+import { AppThemeProvider } from './state/theme/theme.context';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+
+  <AppThemeProvider>
     <App />
-  </React.StrictMode>,
+  </AppThemeProvider>
+
 )
